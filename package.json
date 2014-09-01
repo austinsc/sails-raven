@@ -1,6 +1,6 @@
 {
   "name": "sails-raven",
-  "version": "0.11.2",
+  "version": "0.11.3",
   "description": "Raven adapter for Sails / Waterline",
   "main": "SailsRaven.js",
   "scripts": {
@@ -22,11 +22,10 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "ravendb": "*"
+    "async": "~0.2.9",
+    "lodash": "~2.4.1"
   },
   "devDependencies": {
-    "async": "~0.2.9",
-    "lodash": "~2.4.1",
     "captains-log": "~0.11.0",
     "mocha": "*",
     "waterline-adapter-tests": "~0.10.0"
