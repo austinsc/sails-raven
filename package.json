@@ -4,7 +4,8 @@
   "description": "Raven adapter for Sails / Waterline",
   "main": "SailsRaven.js",
   "scripts": {
-    "test": "node test/integration/runner -R spec -b"
+    "test": "node test/integration/runner",
+    "restart": "node _cleanup.js"
   },
   "repository": {
     "type": "git",
@@ -23,7 +24,8 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "async": "~0.2.9",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "request": "^2.40.0"
   },
   "devDependencies": {
     "captains-log": "~0.11.0",
