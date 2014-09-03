@@ -219,9 +219,6 @@ class Api
 
     @makeRequest 'delete', url, body, headers, cb  # Maybe check for DELETED here?
 
-
-
-
   makeRequest: (verb, url, bodyOrReadableStream, headers, cb) ->
     verb = verb.toLowerCase()
 

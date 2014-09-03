@@ -239,7 +239,7 @@ class Database
     @queryByIndex(Database.DOCUMENTS_BY_ENTITY_NAME_INDEX, search, start, count, cb)
 
 
-  queryByIndex: (index, query, start=0, count=25, cb) ->
+  queryByIndex: (index, query, start=0, count=25, orderby=null, cb) ->
     if typeof start is 'function'
       cb = start
       start = null
@@ -247,12 +247,16 @@ class Database
     else if typeof count is 'function'
       cb = count
       count = null
+    else if typeof orderby is 'function'
+      cb = orderby
+      orderby = null
 
     # if start and count are set to 0, you'll just get the TotalResults property
     # and no results
 
     url = "#{@getIndexUrl(index)}?start=#{start}&pageSize=#{count}&aggregation=None"
     url += "&query=#{@luceneQueryArgs(query)}" if query?
+    url += "&sort=#{orderby}" if orderby?
 
     @apiGet(url, cb)
 

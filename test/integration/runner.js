@@ -72,7 +72,7 @@ new TestRunner({
   interfaces: interfaces,
 
   mocha: {
-    bail: true,
+    //bail: true,
     reporter: 'spec',
     timeout: 150000
   }
