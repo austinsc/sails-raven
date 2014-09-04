@@ -1,8 +1,7 @@
 /**
  * Test dependencies
  */
-var Adapter = require('../../');
-
+var Adapter = require('../../SailsRaven.js');
 
 describe('registerCollection', function () {
 

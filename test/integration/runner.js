@@ -20,7 +20,6 @@ var TestRunner = require('waterline-adapter-tests');
 var Adapter = require('../../SailsRaven');
 
 
-
 // Grab targeted interfaces from this adapter's `package.json` file:
 var package = {};
 var interfaces = [];
@@ -36,8 +35,6 @@ try {
   );
 }
 
-
-
 log.info('Testing `' + package.name + '`, a Sails/Waterline adapter.');
 log.info('Running `waterline-adapter-tests` against ' + interfaces.length + ' interfaces...');
 log.info('( ' + interfaces.join(', ') + ' )');
@@ -45,7 +42,6 @@ console.log();
 log('Latest draft of Waterline adapter interface spec:');
 log('http://links.sailsjs.org/docs/plugins/adapters/interfaces');
 console.log();
-
 
 /**
  * Integration Test Runner
@@ -72,7 +68,7 @@ new TestRunner({
   interfaces: interfaces,
 
   mocha: {
-    //bail: true,
+    bail: true,
     reporter: 'spec',
     timeout: 150000
   }

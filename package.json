@@ -24,6 +24,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "async": "~0.2.9",
+    "linq": "^3.0.4-beta",
     "lodash": "~2.4.1",
     "request": "^2.40.0"
   },
