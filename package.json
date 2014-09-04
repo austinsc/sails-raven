@@ -1,6 +1,6 @@
 {
   "name": "sails-raven",
-  "version": "0.11.7",
+  "version": "0.11.8",
   "description": "Raven adapter for Sails / Waterline",
   "main": "SailsRaven.js",
   "scripts": {
