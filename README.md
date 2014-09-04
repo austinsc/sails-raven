@@ -40,8 +40,6 @@ module.exports.connections = {
 - **TODO** - Create RavenDB indexes based on the Model Schema
 
 
-
-
 ### License
 
 **[MIT](./LICENSE)**
