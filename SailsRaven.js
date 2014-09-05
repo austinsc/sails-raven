@@ -1,1 +1,1 @@
-module.exports = require('./lib/adapter.js');
+module.exports = require('./lib/');
