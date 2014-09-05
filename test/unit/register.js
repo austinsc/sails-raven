@@ -30,5 +30,6 @@ describe('query', function () {
       }).error(function (err) {
         assert.fail(err, null, err);
       }).select();
+    console.log(require('util').inspect);
   });
 });
