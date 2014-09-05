@@ -19,6 +19,10 @@ $ npm install sails-raven
 
 ### Usage
 
+```sh
+$ node _cleanup.js && npm test
+```
+
 ```javascript
 // Config sample: connections.js
 module.exports.connections = {
