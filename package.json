@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/austinsc/sails-%s.git"
+    "url": "git://github.com/austinsc/sails-raven.git"
   },
   "keywords": [
     "Raven",
