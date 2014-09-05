@@ -69,7 +69,8 @@ new TestRunner({
 
   mocha: {
     bail: true,
-    reporter: 'spec',
+    reporter: 'min',
+    watch: true,
     timeout: 150000
   }
   // Most databases implement 'semantic' and 'queryable'.
