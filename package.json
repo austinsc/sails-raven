@@ -26,10 +26,12 @@
     "async": "~0.2.9",
     "linq": "^3.0.4-beta",
     "lodash": "~2.4.1",
-    "request": "^2.40.0"
+    "request": "^2.40.0",
+    "waterline-errors": "^0.9.1"
   },
   "devDependencies": {
     "captains-log": "~0.11.0",
+    "cli-color": "^0.3.2",
     "mocha": "*",
     "waterline-adapter-tests": "~0.10.0"
   },
