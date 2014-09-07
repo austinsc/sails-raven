@@ -68,7 +68,7 @@ new TestRunner({
   interfaces: interfaces,
 
   mocha: {
-    grep: /auto-increment/,
+    // grep: /auto-increment/,
     bail: true,
     reporter: 'min',
     watch: true,
